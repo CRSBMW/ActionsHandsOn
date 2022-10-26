@@ -14,5 +14,5 @@ jobs:
     steps:
       - run: echo "${{ github.event }}"
       - run: echo "${{ github.ref }} and the repo is ${{ github.repository }}"
-      - run: ls -lah *
+      - run: tree
     
