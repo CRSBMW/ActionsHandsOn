@@ -39,6 +39,7 @@ jobs:
     needs: [Test, Test-Load]
     runs-on: ubuntu-latest
     if: github.event.inputs.environment == 'AnEnvironment'
+    environment: AnEnvironment
     steps:
       - run: echo "deploying..."
       - run: sleep 10
